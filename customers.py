@@ -21,3 +21,9 @@ print(customer)
 
 del customer["email"]
 print(customer)
+
+#----Exercise 3-----
+
+print(customer.get("email", "no email on file"))
+
+print(customer["email"])
