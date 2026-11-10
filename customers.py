@@ -39,3 +39,15 @@ for key in customer:
 # Difference: looping with .items() gives me both the key and the value on each pass. Looping without .items() only gives me the keys so I
 # would need customer[key] to get the value.
 
+#----Exercise 5-----
+
+tier_discounts = {"bronze": 0, "silver": .05, "gold": .10, "platinum": .15}
+
+discount = tier_discounts.get(customer["tier"], 0)
+price = 200
+final_price = price * (1 - discount)
+
+print("Tier:", customer["tier"])
+print("Discount:", f"{discount * 100:.0f}%")
+print("Final price:", f"${final_price:.2f}")
+
