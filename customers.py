@@ -1,3 +1,17 @@
+# 1. I would use .get() when a key might be missing and I want a default value
+# instead of an error like looking up optional info on a customer. I would use
+# bracket notation when the key should always be there because then a KeyError
+# tells me something is wrong with my data. My rule of thumb is if it's okay for
+# the key to be missing use .get() and if it's not use brackets.
+
+# 2. Building the summary dictionary reminded me of a pivot table  in
+# Excel where you add up totals for each category like region. The Python version
+# is more useful for large datasets because it can handle huge amounts of data
+# quickly and the same code can be reused on new data instead of rebuilding the
+# table by hand.
+
+
+
 customer = {
     "name":"Bianca Rincon ",
     "email": "Bianca.rincon@gmail.com",
